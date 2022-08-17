@@ -9,7 +9,8 @@
 	<name>spring-security-demo</name>
 
 	<properties>
-		<springframework.version>5.0.2.RELEASE</springframework.version>
+		<springframework.version>5.3.21</springframework.version>
+		<springsecurity.version>5.7.2</springsecurity.version>
 
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -22,6 +23,18 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${springframework.version}</version>
+		</dependency>
+
+		<!--  spring security web and config-->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${springsecurity.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>5.7.3</version>
 		</dependency>
 
 		<!-- Servlet, JSP and JSTL support -->
